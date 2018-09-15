@@ -1,0 +1,65 @@
+Employee Dir
+=================
+
+This is directory for API Project. 
+
+* The APIs are defined on server.js
+* Default Database configuration available on config.js
+* schema File contain MySQL SQL Schema.
+
+Installation Process
+--------------------
+* Copy this directory into any location
+* Go to Current Directory and execute the command 
+  npm install (if nodemon not install, install it)
+* Start service using 
+  nodemon server.js (if nodemon not install, install it)
+* this REST server on default port 3001. If started without error available on http://localhost:30001 link
+
+* Get  Skill API - GET METHOD http://localhost:30001/skills
+* Get  Specific Skill API - GET METHOD http://localhost:30001/skills/{skill_id}
+* Create New SKill - POST METHOD http://localhost:30001/skills
+   json - { "name": "skill_name"}
+* Delete  Specific Skill API - DELETE METHOD http://localhost:30001/skills/{skill_id}
+* Update existing SKill - POST METHOD http://localhost:30001/skills
+   json - { "name": "skill_name", "skill_id":"existing skill_id"}
+
+
+* Get Employee  API - GET METHOD http://localhost:30001/employees
+* Get Employee Specific  API - GET METHOD http://localhost:30001/employees/{emp_id}
+* Create New  - POST METHOD http://localhost:30001/employees
+   json - { "name": "emp_name", "salary":"salary amount","dob": "Date of birt format yyy-mm-dd"}
+* Delete Employee Specific  API - DELETE METHOD http://localhost:30001/employees/{emp_id}
+* Update existing  - POST METHOD http://localhost:30001/employees
+   json - {  "name": "emp_name", "salary":"salary amount","dob": "Date of birt format yyy-mm-dd", "emp_id":"existing emp_id"}
+
+
+* Get Employee  SKILLS - GET METHOD http://localhost:30001/employee_skills/{emp_id}
+* Create new Employee  SKILLS - POST METHOD http://localhost:30001/employee_skills
+ json - { "emp_id": "emp id","skill_id":"skill id"}
+* Delete Employee specefic SKILLS - DELETE METHOD http://localhost:30001/employee_skills?emp_id= {employee id}&skill_id={skill id}
+ json - { "emp_id": "emp id","skill_id":"skill id"}
+
+
+Employee-details Dir
+=================
+
+This is directory for UI Project. 
+
+* Copy this directory into any location
+* Go to Current Directory and execute the command 
+  npm install (if nodemon not install, install it)
+* Start service using 
+  npm start
+* this REST server on default port 3000. If started without error available on http://localhost:30000 link
+
+
+
+Note:
+
+I have attached source code only not with nodemodules.
+
+
+
+
+

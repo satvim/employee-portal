@@ -1,0 +1,21 @@
+create table employee (
+   emp_id INT(4) zerofill not null auto_increment, 
+   name VARCHAR(256) not null,
+   dob DATE not null,
+   salary INT(11) not null,
+   primary key(emp_id)
+);
+
+
+create table skill (
+   skill_id INT(2) zerofill not null auto_increment, 
+   name VARCHAR(256) not null,
+   primary key(skill_id)
+);
+
+create table emp_skill (
+   emp_id INT(4) zerofill not null,
+   skill_id INT(2) zerofill not null,
+   PRIMARY KEY (emp_id, skill_id)
+);
+
